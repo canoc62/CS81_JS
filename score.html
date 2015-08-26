@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>ScoreBoard</title>
+		<script src="jquery-2.1.4.js"></script>
+		<script src="score.js"></script>
+		<script>
+			var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+
+    $(function () {
+        $('img.headPic').hover(sourceSwap, sourceSwap);
+    });
+		</script>
+		<link rel="stylesheet" type="text/css" href="score.css">
+	</head>
+	<center>
+		<header class="headImages">
+			<a href="http://losangeles.dodgers.mlb.com/index.jsp?c_id=la"><img id="headPic1" src="CS81dodgers.jpg" onmouseover="switchPic1(this)"onmouseout="switchBack1(this)" height="150" width="150" id="1"></a>
+
+			<a href="http://www.nba.com/lakers/?tmd=1"><img id="headPic2" src="CS81lakers.jpg" onmouseover="switchPic2(this)" onmouseout="switchBack2(this)" height="150" width="150" id="2"></a>
+
+			<a href="http://www.usctrojans.com/"><img id="headPic3" src="CS81usc.jpg" onmouseover="switchPic3(this)" onmouseout="switchBack3(this)" height="150" width="150" id="3"></a>
+
+			<a href="http://www.seahawks.com/"><img id="headPic4" src="CS81seahawks.jpg" onmouseover="switchPic4(this)" onmouseout="switchBack4(this)" height="150" width="150" id="4"></a>
+
+			<a href="http://www.nba.com/clippers/?tmd=1"><img id="headPic5" src="CS81clippers.svg" onmouseover="switchPic5(this)" onmouseout="switchBack5(this)" height="150" width="150" id="5"></a>
+		</header>
+	</center>
+	<script>
+			var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+
+    $(function () {
+        $('img.headPic').hover(sourceSwap, sourceSwap);
+    });
+		</script>
+	<h1 id="topHead">CHRIS'S GAMECAST</h1>
+	<body>
+    <div id="clearBar"></div> 
+   	<div> 
+			<label>Time(in seconds): <input type="number" id="inputTime"/></label>
+			<input type="button" id="timeBtn" value="Set Clock"/>
+			<input type="button" id="clock" value="START"/>
+			<b>CLOCK:</b>
+			<font size="10" face="Arial" id="timer" class="clock"></font>
+		</div>
+		<script src="clock.js" ></script>
+		<div class="ballInfo">
+			<label>PERIOD:<input type="text" id="period"/></label>
+			<label>DOWN:<input type="number"/></label> 
+			<label>TO GO:<input type="text"/></label> 
+			<label>BALL ON:<input type="number"/></label> 
+			<label>POSSESSION:<input type="text"/></label>
+		</div>
+		<p></p>
+		<div class="header">
+			<div class="headerTeam1">
+    		<form>
+        	<input type="text" name="team1">
+        </form> 
+    	</div> 
+    	<div class="headerTeam2">
+    		<form>
+        	<input type="text" name="team2">
+       </form>    
+    	</div>
+    </div> 
+    </div>
+    	<div id="clearBar"></div> 
+		</div> 
+		<div>
+			<div id="black">
+				<b id='teamScore1'>0</b><br />
+			</div> 
+			<div id="white">
+				<b id='teamScore2'>0</b><br />
+			</div> 
+			<div id="clearBar"></div> 
+		</div> 
+		<div id="footer">
+			<div id="score1">
+				<input type='button' onclick='add_score1()' value="+"/>
+ 				<input type='button' onclick='remove_score1()' value="-"/>
+			</div> 
+			<div id="score2">
+ 				<input type='button' onclick='add_score2()' value="+"/>
+ 				<input type='button' onclick='remove_score2()' value="-"/>
+ 			</div>
+ 		</div>
+ 	</body>
+<html>
+	

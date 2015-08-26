@@ -1,0 +1,125 @@
+body {
+	background:#000; color:#fff;
+}
+#topHead {
+	text-align:center; 
+	font-family: Arial;
+}
+#header {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#wrapper {
+	width:100%; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+#clearBar {
+	clear:both;
+}
+#black {
+	background-color:#000;  
+	width:50%; 
+	font-size:300px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	text-align:center; 
+	float:left;
+	color:#FFF;
+}
+#white {
+	background-color:#000;  
+	width:50%; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:300px;   
+	text-align:center; 
+	float:left;
+	color:#FFF;
+}
+#footer {
+	width:100%; 
+	margin-left:auto; 
+	margin-right:auto; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	padding-top:25px; 
+	display:block;
+}
+#score1 {
+	width:50%; 
+	background-color:#000; 
+	float:left;
+}
+#score2 {
+	width:50%; 
+	background-color:#000; 
+	float:left;
+}	
+}
+
+.ballInfo {
+	width:10%;
+}
+
+.ballInfo input {
+	width:10%; 
+	height:30px; 
+	text-align:center; 
+	background:#1e1e1e; 
+	border:0; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:25px; 
+	color:#ddd;
+}
+.headerTimeout{
+	width:100%;
+}
+.headerTimeout input {
+	width:10%; 
+	height:25px; 
+	text-align:center; 
+	background:#1e1e1e; 
+	border:0; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:30px; 
+	color:#ddd;
+}
+.headerTimeout1 {
+	width:10%; 
+	float:right;
+	text-align:center;
+}
+.headerTimeout2 {
+	width:10%; 
+	float:left;
+	text-align:center;
+}
+.header {
+	width:100%;
+}
+.header input {
+	width:100%; 
+	height:135px; 
+	text-align:center; 
+	background:#1e1e1e; 
+	border:0; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:100px; 
+	color:#ddd;
+}
+.headerTeam1 {
+	width:25%; 
+	float:right; 
+	text-align:center;
+}
+.headerTeam2 {
+	width:25%; 
+	float:left; 
+	text-align:center;
+}
+
+
+
+
+
+
